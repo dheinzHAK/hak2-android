@@ -47,7 +47,7 @@ fun GreetingPreview() {
 }
 
 fun main() {
-    val trafficLightColor = "Black"
+   /* val trafficLightColor = "Black"
 
     if (trafficLightColor == "Red") {
         println("Stop")
@@ -57,7 +57,7 @@ fun main() {
         println("Go")
     } else {
         println("Invalid traffic-light color")
-    }
+    }*/
 
    /* fun main() {
         val trafficLightColor = "Amber"
@@ -69,6 +69,16 @@ fun main() {
             else -> println("Invalid traffic-light color")
         }
     }*/
+
+    val trafficLightColor = "Amber"
+
+    val message = when(trafficLightColor) {
+        "Red" -> "Stop"
+        "Yellow", "Amber" -> "Slow"
+        "Green" -> "Go"
+        else -> "Invalid traffic-light color"
+    }
+    println(message)
 
 }
 
