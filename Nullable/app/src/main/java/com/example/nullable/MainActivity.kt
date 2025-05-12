@@ -47,15 +47,44 @@ fun GreetingPreview() {
 }
 
 fun main() {
-    var number: Int? = 10
+    /*var number: Int? = 10
     println(number)
 
     number = null
     println(number)
 
+
+
+
+
+
     var favoriteActor: String? = "Sandra Oh"
     println(favoriteActor)
 
     favoriteActor = null
-    println(favoriteActor)
+    println(favoriteActor)*/
+
+
+
+
+
+
+
+   /* var favoriteActor: String? = "Sandra Oh"
+
+    val lengthOfName = favoriteActor?.length
+
+    println("The number of characters in your favorite actor's name is $lengthOfName.")*/
+
+
+
+
+
+
+
+    var favoriteActor: String? = "Sandra Oh"
+
+    val lengthOfName = favoriteActor?.length ?: 0
+
+    println("The number of characters in your favorite actor's name is $lengthOfName.")
 }
